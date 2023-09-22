@@ -1,0 +1,118 @@
+
+
+<div class="home-sec">
+  <!-- home -->
+
+  <div class=" h-[38rem]  w-full">
+    <div class="home h-full">
+   
+   
+      <div class="h-full">
+        <div
+            class="w-full h-full  bg-cover bg-center">
+            <div class="w-full h-full flex  justify-center items-center bg-black/60 backdrop-brightness-50">
+                <div class="container">
+                  <div class="lg:mx-5 mx-2  mt-5  h-full"> 
+                    <h1 class="xl:text-7xl text-3xl font-bold ms-3 text-green-700 animate-fade-up" >Secure your <br>
+                        future with us</h1>
+                        <p class="py-3 ms-3 text-white">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Nobis illum animi </p>
+                        <div class="flex gap-5 items-center">
+                        <div class="ms-3">
+                          <button class="btn btn-lg bg-green-700 text-white hover:bg-green-700" data-aos="fade-down" data-aos-offset="10" data-aos-easing="ease-in" data-aos-duration="1000">Get started</button>
+                        </div>
+                          <div class="relative bottom-2">
+                            <button class="btn absolute p-3 z-1 bg-green-700 text-white hover:bg-green-950 rounded-circle" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                              </svg>
+                            </button>
+                            <button class="btn relative left-1 top-1 animate-ping p-4 bg-green-600 text-white hover:bg-green-950 rounded-circle"></button>
+                            <button class="btn absolute  top-1 left-1 delay-700  animate-ping  p-4 bg-green-900 text-white hover:bg-green-950 rounded-circle"></button>
+          
+                          </div>
+                          <div class="text-white hidden md:flex">
+                            <p>Watch Video</p>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    </div>
+  </div>
+
+
+  <!-- about -->
+<div class=" flex items-center justify-center xl:h-screen">
+  <div class="container py-5">
+    <div class="row " >
+      <div class="col-sm-12 col-md-6">
+        <h2 class="text-2xl text-green-600 ps-3 ">Who we are?</h2>
+        <h1 class="text-4xl p-3 font-extrabold text-green-700">For U Financial Services</h1>
+        <h5 class="p-3 text-black/80 leading-8">
+          We are a team of individual dedicated to providing our clients with the best possible life insurance coverage. We understand that everyone's needs are different, so we work with you to create a personalized insurance plan that meets your unique goals. Whether you're saving for retirement, protecting your family, or planning for the unexpected, we can help you find the right coverage for you. We are committed to providing our clients with the highest level of service and support
+        </h5>
+       
+        <p class="text-center "><span class="text-green-700 cursor-pointer">Show more</span></p>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <img src="./assets/imges/family2.jpg" alt="" class="rounded-lg">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+
+
+<div class="modal fade overflow-hidden" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered m-0 p-0 h-screen" >
+    <div class="modal-content bg-black/80 lg:h-screen">
+      <div class="ms-auto p-2 text-white">
+     
+        <button  class=" btn-white" data-bs-dismiss="modal" aria-label="Close" (click)="pauseVideo()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+        </button>
+      </div>
+      <div class="modal-body lg:h-[98%]">
+        <div class=" ">
+          <div class="container flex items-center justify-center lg:h-screen">
+          
+              <video controls width="600px" class=" " #videoPlayer>
+                <source src="./assets/imges/video.mp4" type="video/mp4 ">
+            
+              </video>
+             
+            </div>
+      </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+
+<!-- services -->
+
+<app-services></app-services>
+<!-- gallery -->
+
+<app-team></app-team>
+
+<!-- Testimonials -->
+<div class="">
+  <app-testimonials></app-testimonials>
+</div>
+
+
+<!-- contact  -->
+<app-quotes></app-quotes>
+
+
+</div>
+

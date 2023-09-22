@@ -1,0 +1,43 @@
+.testimonials{
+    background: url('/assets/imges/FreeVector.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+::ng-deep .owl-theme .owl-dots .owl-dot span {
+    background: #f4f4f4!important; /* dots color*/
+    outline: 1px solid rgb(232, 233, 232);
+  }
+ 
+ ::ng-deep .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: #3a9462!important; /*active and on hover color*/
+  }
+  ::ng-deep .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: #3a9462!important; /*active and on hover color*/
+  }
+  ::ng-deep  .owl-prev {
+    position: absolute;
+    right: 50px;
+    top: -60px;
+    width: 40px;
+
+}
+::ng-deep  .owl-next {
+    position: absolute;
+    right: 0;
+    top: -60px;
+     width: 40px;
+    font-size: 40px;
+    color: rgb(63, 191, 16);
+   
+    
+
+}
+::ng-deep .owl-prev, ::ng-deep .owl-next {
+
+font-size: 20px !important;
+  background-color: rgb(5, 67, 33) !important;
+}

@@ -1,0 +1,25 @@
+{
+    "team":[{
+        "name":"Saji P.",
+        "img":"./assets/imges/sajip.jpg"
+    },
+{
+    "name":"Manu K S",
+    "img":"./assets/imges/Manu ks.jpg"
+},
+{
+    "name":"Rohith Ashokan",
+    "img":"./assets/imges/rohith ashokan.jpg"
+},
+{
+    "name":"Shaji R",
+    "img":"./assets/imges/shaji.jpg"
+},{
+    "name":"Shiny Kuriakose",
+    "img":"./assets/imges/shiny.jpg"
+   
+}
+
+
+]
+}

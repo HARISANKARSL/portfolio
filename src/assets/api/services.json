@@ -1,0 +1,45 @@
+{
+    "services":[{
+        "servicesName":"Life Insurance",
+        "icon":"./assets/imges/life.png",
+        "para":"In many countries, including India, life insurance premiums are eligible for tax deductions under Section 80C of the Income Tax Act. NRIs can also..... ",
+        "route":"/life-insurence-planning"
+    },
+    {
+        "servicesName":"Health Insurance",
+        "icon":"./assets/imges/health.png",
+        "para":" Health insurance premiums are often eligible for tax deductions or credits in various countries, including India and the United States.NRIs should .....",
+        "route":"/health-insurance"
+    },
+    {
+        "servicesName":"Pension Plans",
+        "icon":"./assets/imges/retirement.png",
+        "para":"Some pension plans or retirement savings products may offer tax benefits, and these can be especially relevant for NRIs planning for their .....",
+        "route":"/pension-planning"
+    },
+
+    {
+        "servicesName":"Education Insurance Plans",
+        "icon":"./assets/imges/education.png",
+        "para":"  Insurance policies designed for educational expenses may offer tax benefits in some countries.NRIs should assess whether they can .....",
+        "route":"/educational-insurance"
+    },
+
+    {
+        "servicesName":"Term Insurance*",
+        "icon":"./assets/imges/term.png",
+        "para":" Term insurance provides pure life coverage and typically doesn't offer any maturity benefits. However, premiums paid for term insurance.....",
+        "route":"/term-insurance"
+    },
+
+    {
+        "servicesName":"Investment-Linked Insurance",
+        "icon":"./assets/imges/invest.png",
+        "para":" Some insurance products combine life coverage with an investment component. NRIs should evaluate the tax implications of both the insure .....",
+        "route":"/investment-planning"
+    }
+
+
+]
+
+}

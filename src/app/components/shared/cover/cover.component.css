@@ -1,0 +1,7 @@
+.cover{
+    background: url('/assets/imges/top1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}

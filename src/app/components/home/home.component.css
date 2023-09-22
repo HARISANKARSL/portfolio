@@ -1,0 +1,30 @@
+.home{
+   background: url('https://i.stack.imgur.com/6Yn3K.png');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+ 
+
+}
+.services{
+   background: url('/assets/imges/family1.jpg');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.gallery{
+   background: url('/assets/imges/white-background_73729-213.avif');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.contact{
+   background: url('/assets/imges/gif.gif');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.modal-dialog{
+   max-width: 100% !important;
+   height: 100vh !important;
+}

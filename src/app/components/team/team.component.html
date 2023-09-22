@@ -1,0 +1,30 @@
+<ng-container *ngIf="!showHeader">
+  <app-cover></app-cover>
+</ng-container>
+<div class="gallery bg-gray-50 my-5">
+    <div class="container py-5 ">
+      <div class="text-center">
+        <h2 class="py-2 font-semibold text-xl text-green-500">OUR TEAM MEMBER
+          </h2>
+          <h1 class="py-2 font-bold text-3xl">Discover Our Team</h1>
+      </div>
+    <div class="lg:mx-5 mx-1">
+      <owl-carousel-o [options]="customOptions" >
+        <ng-template carouselSlide *ngFor="let teams of team"> 
+          <div class="lg:p-3">
+            <div class="card w-full" >
+              <img src="{{teams.img}}" class="card-img-top aspect-square w-full" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title font-bold">{{teams.name}}</h5>
+          
+               
+              </div>
+            </div>
+          </div>
+        </ng-template>  
+       
+        
+      </owl-carousel-o>
+    </div>
+    </div>
+  </div>
