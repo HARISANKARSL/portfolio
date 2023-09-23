@@ -13,7 +13,7 @@ export class QuotesComponent {
   form:FormGroup=this.fb.group({
 
 from_name: "",
-to_name: "admin",
+to_name: "InsurenceHub",
 from_email: "",
 from_phone: "",
 message: "",
@@ -32,10 +32,11 @@ message: "",
         }
       }
     })}
-     async sendEmail() {
-      emailjs.init('BZuFMaPIg0VzUr_sj')
-     let response= await emailjs.send("service_nxibwi7","template_ypse4jk");
-      emailjs.send("service_nxibwi7","template_ypse4jk",{
+    
+    async sendEmail() {
+      emailjs.init('7jy21fnkZTHRYSJwb')
+ 
+      let response= await emailjs.send("service_mgondfk","template_haoz94m",{
       from_name: this.form.value.from_name,
       to_name: this.form.value.to_name,
       from_email: this.form.value.from_email,
