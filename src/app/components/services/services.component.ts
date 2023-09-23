@@ -24,7 +24,7 @@ export class ServicesComponent {
     ngOnInit(){
       this.api.getService().subscribe((res)=>{
       this.services=res.services
-      console.log(this.services)
+    
       })
     }
 }

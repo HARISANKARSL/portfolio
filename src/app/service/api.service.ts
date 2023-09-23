@@ -13,4 +13,10 @@ export class ApiService {
   getService(){
     return this.http.get<any>("/assets/api/services.json")
   }
+  getTestimonials(){
+    return this.http.get<any>("/assets/api/testimonial.json")
+  }
+  getAllImages(){
+    return this.http.get<any>("/assets/api/gallery.json")
+  }
 }

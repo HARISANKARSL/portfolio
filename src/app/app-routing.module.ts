@@ -7,7 +7,7 @@ import { RetirementComponent } from './components/Insurences/retirement/retireme
 import { InvestmentComponent } from './components/Insurences/investment/investment.component';
 
 
-import { NriservicesComponent } from './components/Insurences/nriservices/nriservices.component';
+
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ServicesComponent } from './components/services/services.component';
@@ -23,6 +23,7 @@ import { TravelinsurenceComponent } from './components/Insurences/travelinsurenc
 import { HealthComponent } from './components/Insurences/health/health.component';
 import { EducationINSURENCEComponent } from './components/Insurences/education-insurence/education-insurence.component';
 import { TerminsurenceComponent } from './components/Insurences/terminsurence/terminsurence.component';
+import { NriservicesComponent } from './components/Insurences/nriservices/nriservices.component';
 
 const routes: Routes = [
   {
@@ -45,10 +46,8 @@ const routes: Routes = [
     path:'investment-planning',component:InvestmentComponent
   },
  
-  
-  {
-    path:'nri-services',component:NriservicesComponent
-  },
+  {path:"nri-services",component:NriservicesComponent},
+ 
   {
     path:'gallery',component:GalleryComponent
   },

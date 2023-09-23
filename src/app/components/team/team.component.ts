@@ -55,7 +55,7 @@ export class TeamComponent {
     ngOnInit(){
       this.api.getTeam().subscribe((res)=>{
      this.team=res.team
-     console.log(this.team)
+     
       })
     }
 }

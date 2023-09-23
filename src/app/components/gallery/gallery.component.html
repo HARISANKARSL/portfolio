@@ -1,39 +1,18 @@
 <app-cover></app-cover>
 <div class="gallery py-5">
     <div class="container">
+        <div>
+           
+            <h1 class="text-3xl font-extrabold py-2">Gallery</h1>
+          </div>
         <div class="row">
-            <div class="col-sm-12 col-md-4 py-2">
-                <div>
-                    <img src="./assets/imges/family1.jpg" class="rounded-xl" alt="">
+            <div class="col-sm-12 col-md-3 py-2" *ngFor="let items of allImages">
+                <div class="">
+                    <img src="{{items.images}}" class="rounded-xl h-[20rem] w-full" alt="">
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4">
-                <div>
-                    <img src="./assets/imges/family1.jpg" class="rounded-xl" alt="">
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <div>
-                    <img src="./assets/imges/family1.jpg" class="rounded-xl" alt="">
-                </div>
-            </div>
+            
         </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-4 py-2">
-                <div>
-                    <img src="./assets/imges/family1.jpg" class="rounded-xl" alt="">
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <div>
-                    <img src="./assets/imges/family1.jpg" class="rounded-xl" alt="">
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <div>
-                    <img src="./assets/imges/family1.jpg" class="rounded-xl" alt="">
-                </div>
-            </div>
-        </div>
+        
     </div>
 </div>

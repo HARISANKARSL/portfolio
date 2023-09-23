@@ -2,7 +2,7 @@
   <div class="container">
     <nav class="lg:flex justify-between items-center w-full">
       <div class="flex item-center justify-center">
-        <div class="flex items-center px-5 justify-between border-e">
+        <div class="flex items-center xl:px-5 justify-between border-e">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -15,7 +15,7 @@
               d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
             />
           </svg>
-          <div class="flex items-center px-2">6391 Elgin St. Celina, 10299</div>
+          <div class="flex items-center px-2">Insurance hub <br> Bypass junction Velloorkunnam Muvattupuzha</div>
         </div>
         <div class="flex items-center px-5">
           <span>
@@ -43,14 +43,14 @@
   </div>
 </div>
 <div class="navbar w-full border-b h-20  {{isNavbarScroll?'fixed top-0 shadow transition-all duration-150 bg-white w-full z-10 animate__animated animate__fadeInDown animate-faster lg:px-0 px-2 text-black':'    w-full'}}">
-  <div class="container h-full ">
-    <div class="flex  justify-between h-full xl:mx-5  w-full">
+  <div class="container h-full w-full ">
+    <div class="flex  justify-between h-full  w-full">
       <div class="flex items-center justify-center">
-       <h1 class="font-bold text-2xl  lg:mx-5 cursor-pointer" routerLink="/home">Logo</h1>
+       <img class=" h-[80px] xl:w-[100px] w-[80px]   cursor-pointer" src="./assets/imges/lgo1.png" routerLink="/home">
       </div>
       <div class="lg:flex hidden ">
         <app-menu></app-menu>
-        <div>
+        <div class="flex items-center justify-center">
           <app-button></app-button>
         </div>
       </div>
@@ -60,7 +60,7 @@
         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
       </svg>
      </div>
-     <nav class="  animate__animated animate__fadeInDown animate-faster
+     <nav class="lg:hidden  animate__animated animate__fadeInDown animate-faster
      {{isSidebarOpen?'flex w-full h-screen z-40 absolute  left-0 top-0 text-white':'hidden'}} " >
       <div class="bg-green-800 w-full md:max-w-md p-2">
       <div class="flex justify-end  ">
@@ -72,11 +72,34 @@
       </div>
       <div class="mt-3 md:p-5 p-2 ">
     
-    
+        <div class="lg:flex gap-5  h-full ">
+          <ul class="lg:flex   h-full mt-2 text-lg ">
+          
+            <li class="hover:text-green-600 text-md hover:transition-ease duration-500 cursor-pointer font-semibold lg:border-0 border-b lg:px-5  py-2" routerLink="/home" (click)="closeSidebar()" >Home</li>
+            <li class="hover:text-green-600 text-md hover:transition-ease duration-500 cursor-pointer font-semibold lg:border-0 border-b lg:px-5 py-2" routerLink="/about" routerLinkActive="active" (click)="closeSidebar()">About Us</li>
+            
+        <div class="group  nav-wrapper lg:text-center h-full">
+          <div class="relative">
+            <li class="hover:text-green-600 h-full  text-md hover:transition-ease duration-500 cursor-pointer font-semibold lg:border-0 border-b lg:px-5 py-2 ">Services</li>
+            <span class="lg:hidden absolute right-0 top-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+            </span>
+          </div>
+        <app-submenu (click)="closeSidebar()"></app-submenu>
+        </div>
+           
+            <li class="hover:text-green-600 text-md hover:transition-ease duration-500 cursor-pointer font-semibold  border-b lg:px-5 py-2" routerLink="/nri-services" (click)="closeSidebar()">NRI services</li>
+            <li class="hover:text-green-600 text-md hover:transition-ease duration-500 cursor-pointer font-semibold  border-b lg:px-5 py-2" routerLink="/gallery" (click)="closeSidebar()">Gallery</li>
+            <li class="hover:text-green-600 text-md hover:transition-ease duration-500 cursor-pointer font-semibold  border-b lg:px-5 py-2" routerLink="/contact-us" (click)="closeSidebar()">Contact</li>
+          </ul>
+        
+        </div>
 
-      <app-menu class=" items-center  w-full text-white"  ></app-menu>
-      <app-button class="bg-white"></app-button>
-      <app-social class=" flex items-center justify-center gap-5 mt-5"></app-social>
+     
+      <app-button class="bg-white" (click)="closeSidebar()"></app-button>
+      <app-social class=" flex items-center justify-center gap-5 mt-5" (click)="closeSidebar()"></app-social>
       </div>
       </div>
       <div (click)="closeSidebar()" class="bg-slate-900 hidden md:block md:w-full opacity-70 blur-5xl">

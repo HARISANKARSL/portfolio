@@ -26,14 +26,13 @@ import { InsurenceComponent } from './components/Insurences/insurence/insurence.
 import { InvestmentComponent } from './components/Insurences/investment/investment.component';
 
 import { TaxComponent } from './components/tax/tax.component';
-import { NriservicesComponent } from './components/Insurences/nriservices/nriservices.component';
+
 import { LightgalleryModule } from 'lightgallery/angular';
 import { TeamComponent } from './components/team/team.component';
 import { QuotesComponent } from './components/quotes/quotes.component';
 import { DropdownComponent } from './components/shared/dropdown/dropdown.component';
 import { SubmenuComponent } from './components/shared/submenu/submenu.component';
 import { VideoplayerComponent } from './components/videoplayer/videoplayer.component';
-
 
 import { ToastrModule } from 'ngx-toastr';
 import { MotorInsurenceComponent } from './components/Insurences/motor-insurence/motor-insurence.component';
@@ -46,6 +45,40 @@ import { RuralinsurenceComponent } from './components/Insurences/ruralinsurence/
 import { HealthComponent } from './components/Insurences/health/health.component';
 import { EducationINSURENCEComponent } from './components/Insurences/education-insurence/education-insurence.component';
 import { TerminsurenceComponent } from './components/Insurences/terminsurence/terminsurence.component';
+import { NgxUiLoaderConfig, NgxUiLoaderHttpModule, NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
+import { NriservicesComponent } from './components/Insurences/nriservices/nriservices.component';
+
+const ngxUiLoaderConfig: NgxUiLoaderConfig = {
+  "bgsColor": "#080808",
+  "bgsOpacity": 0.2,
+  "bgsPosition": "bottom-right",
+  "bgsSize": 30,
+  "bgsType": "ball-spin-clockwise",
+  "blur": 15,
+  "delay": 0,
+  "fastFadeOut": true,
+  "fgsColor": "#f5f5f5",
+  "fgsPosition": "center-center",
+  "fgsSize": 80,
+  "fgsType": "square-jelly-box",
+  "gap": 20,
+  "logoPosition": "center-center",
+  "logoSize": 200,
+  "logoUrl": "",
+  "masterLoaderId": "master",
+  "overlayBorderRadius": "0",
+  "overlayColor": "rgba(24,24,24,0.99)",
+  "pbColor": "#fdf6fb",
+  "pbDirection": "ltr",
+  "pbThickness": 2,
+  "hasProgressBar": true,
+  "text": "loading.....",
+  "textColor": "#FFFFFF",
+  "textPosition": "center-center",
+  "maxTime": -1,
+  "minTime": 300,
+
+};
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,7 +100,7 @@ import { TerminsurenceComponent } from './components/Insurences/terminsurence/te
     InvestmentComponent,
 
     TaxComponent,
-    NriservicesComponent,
+  
     TeamComponent,
     QuotesComponent,
     DropdownComponent,
@@ -83,7 +116,8 @@ import { TerminsurenceComponent } from './components/Insurences/terminsurence/te
     HealthComponent,
     EducationINSURENCEComponent,
     TerminsurenceComponent,
-    
+ 
+    NriservicesComponent
     
     
   ],
@@ -96,7 +130,12 @@ import { TerminsurenceComponent } from './components/Insurences/terminsurence/te
     LightgalleryModule,
     ReactiveFormsModule,
     FormsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    
+
+    NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
+    NgxUiLoaderRouterModule, // import this module for showing loader automatically when navigating between app routes
+    NgxUiLoaderHttpModule
   
   ],
   providers: [],

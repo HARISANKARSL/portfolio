@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { ApiService } from 'src/app/service/api.service';
 
 @Component({
   selector: 'app-testimonials',
@@ -7,6 +8,8 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./testimonials.component.css']
 })
 export class TestimonialsComponent {
+  testimonialsList:any=[]
+  constructor(private api:ApiService){}
   Testimonials: OwlOptions = {
     loop: true,
     mouseDrag: true,
@@ -39,5 +42,11 @@ export class TestimonialsComponent {
       
     },
  
+  }
+  ngOnInit(){
+    this.api.getTestimonials().subscribe((res)=>{
+     this.testimonialsList=res.testimonials
+    
+    })
   }
 }

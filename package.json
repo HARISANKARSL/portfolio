@@ -24,6 +24,7 @@
     "lightgallery": "^2.7.1",
     "ngx-owl-carousel-o": "^15.0.0",
     "ngx-toastr": "^15.2.2",
+    "ngx-ui-loader": "^13.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "videogular2": "^6.0.0",
