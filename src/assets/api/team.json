@@ -1,22 +1,22 @@
 {
     "team":[{
         "name":"Saji P.",
-        "img":"./assets/imges/sajip.jpg"
+        "img":"./assets/imges/tm1.jpg"
     },
 {
     "name":"Manu K S",
-    "img":"./assets/imges/Manu ks.jpg"
+    "img":"./assets/imges/tm2.jpg"
 },
 {
     "name":"Rohith Ashokan",
-    "img":"./assets/imges/rohith ashokan.jpg"
+    "img":"./assets/imges/tm-3.jpg"
 },
 {
     "name":"Shaji R",
-    "img":"./assets/imges/shaji.jpg"
+    "img":"./assets/imges/tm4.jpg"
 },{
     "name":"Shiny Kuriakose",
-    "img":"./assets/imges/shiny.jpg"
+    "img":"./assets/imges/tm5.jpg"
    
 }
 
