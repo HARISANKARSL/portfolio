@@ -1,22 +1,37 @@
 {
     "team":[{
         "name":"Saji P.",
-        "img":"./assets/imges/tm1.jpg"
+        "img":"./assets/imges/shajiP.jpg"
     },
 {
     "name":"Manu K S",
-    "img":"./assets/imges/tm2.jpg"
+    "img":"./assets/imges/Manu K S.jpg"
 },
 {
     "name":"Rohith Ashokan",
-    "img":"./assets/imges/tm-3.jpg"
+    "img":"./assets/imges/Rohith Ashokan.jpg"
 },
 {
     "name":"Shaji R",
-    "img":"./assets/imges/tm4.jpg"
+    "img":"./assets/imges/Shaji R.jpg"
 },{
     "name":"Shiny Kuriakose",
-    "img":"./assets/imges/tm5.jpg"
+    "img":"./assets/imges/Shiny Kuriakose.jpg"
+   
+}
+,{
+    "name":"Shiny Biju",
+    "img":"./assets/imges/Shiny Biju.jpg"
+   
+}
+,{
+    "name":"Biju K P",
+    "img":"./assets/imges/Biju K P.jpg"
+   
+}
+,{
+    "name":"Vijayakumari K N",
+    "img":"./assets/imges/Vijayakumari K N.jpg"
    
 }
 
